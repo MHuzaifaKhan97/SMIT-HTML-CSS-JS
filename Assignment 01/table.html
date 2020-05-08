@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Periodic Table</title>
+
+    <style>
+        table {
+            margin-top: 200px;
+        }
+
+        table tr td {
+            border: 1px solid red;
+            background-color: orange;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table tr th {
+            background-color: orange;
+            border: 1px solid red;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        table tr td:hover {
+            cursor: pointer;
+            background-color: yellow;
+            color: red;
+            transition-duration: 30s;
+            transform: scale(2) rotate(720deg);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- <table  width="600" align="center">
+        <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Contact No</th>
+        </tr>
+        <tr align="center">
+            <td>01</td>
+            <td>Zubair Hussain</td>
+            <td rowspan="2">23</td>
+            <td>03122514650</td>
+        </tr>
+        
+        <tr align="center">
+            <td>02</td>
+            <td>Sajjad Hussain</td>
+            <td>03122234650</td>
+        </tr>
+    </table> -->
+
+    <form action="./table.html" method="GET">
+        Username :
+        <input type="text" placeholder="Enter your name.." maxlength="30" /> <br> <br>
+        Password :
+        <input type="password" placeholder="Enter password.." />
+        <br>
+        Choose Gender : <br>
+        <input type="radio" name="gen" value="male" /> Male
+        <input type="radio" name="gen" value="female" /> Female
+
+        <br>
+        Choose Skills:
+        <br>
+        <input type="checkbox" name="skills" value="html" /> HTML
+        <input type="checkbox" name="skills" value="css" /> CSS
+        <input type="checkbox" name="skills" value="js" /> Javascript
+        <input type="checkbox" name="skills" value=".net" /> .NET
+        <br><br>
+        <button>Submit</button>
+        
+    </form>
+
+</body>
+
+</html>

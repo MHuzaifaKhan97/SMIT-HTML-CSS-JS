@@ -1,0 +1,132 @@
+/* index.html start */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo h2 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: rgb(127, 35, 214);
+    text-shadow: 2px 2px 5px orange;
+    position: relative;
+    top: -20px;
+    display: inline-block;
+}
+.logo h2:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+    cursor: pointer;
+    color: orange;
+    text-shadow: 2px 2px 5px rgb(116, 6, 116);
+    
+}
+.logo h2:not(:hover){
+    transform: scale(1);
+    transition-duration: 1s;
+}
+.form-body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(127, 35, 214);
+}
+
+.form {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.form label {
+    display: inline-block;
+    width: 200px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form div {
+    margin: 20px 0;
+}
+.qualification table {
+    display: inline-block;
+}
+.qualification-heading {
+   vertical-align: top;
+}
+.address {
+   vertical-align: top;
+}
+table{
+    width: fit-content;
+    height: auto;
+}
+table tr td {
+    text-align: center;
+}
+.btn-submit{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(17, 124, 17);
+    border: 1px solid white;
+    border-radius: 30px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+}
+.btn-submit:hover{
+    color: rgb(17, 124, 17);
+    background-color: white;
+    transition-duration: .5s;
+}
+.btn-reset{
+    text-align: center;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(251, 0, 0);
+    border: 1px solid white;
+    border-radius: 30px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+}
+.btn-reset:hover{
+    color: rgb(251, 0, 0);
+    background-color: white;
+    transition-duration: .5s;
+}
+/* Index.html end */
+
+/* success.html start */
+.success{
+    margin-top: 100px;
+    text-align: center;
+}
+.thankyou img{
+    width: 300px;
+    height: 300px;
+}
+.thankyou h2{
+    color: rgb(116, 180, 21);
+    font-size: 40px;
+}
+.submitted h3{
+    color: purple;
+}
+/* success.html end */
