@@ -21,7 +21,7 @@ window.alert('Hello... I can run JS through my web browsers console');
 var username;
 
 // Quesion # 2
-var myName = "Muhammad Waleed Khan";
+var myName = "Muhammad Huzaifa Khan";
 
 // Quesion # 3
 var message;
@@ -31,7 +31,7 @@ alert(message);
 // Quesion # 4
 var name = "Muhammad Huzaifa Khan";
 var age = 23;
-var course = "Certified Mobile Application Development";
+var course = "Certified Web & Mobile Hybrid Application Development";
 alert(name);
 alert(age);
 alert(course);
@@ -498,7 +498,7 @@ else {
 }
 
 //Question # 5
-var corrPassword = "Waleed1999";
+var corrPassword = "huzaifa123@#";
 var userPassword = prompt("Enter Your Password");
 if(userPassword == "") {
     alert("Please Enter Your Password");
@@ -550,7 +550,7 @@ var stdInfo = [];
 var studInfo = new Array();
 
 //Question # 3
-var name = ["waleed Khan", "Huzaifa Khan", "Khan Abu Bakar"];
+var name = ["Muhammad waleed Khan", "Muhammad Huzaifa Khan", "Khan Abu Bakar"];
 
 //Question # 4
 var ages = [21, 23, 19];
@@ -559,7 +559,7 @@ var ages = [21, 23, 19];
 var booleanArray = [true, false];
 
 //Question # 6
-var mixedArray = ["waleed Khan", 21, true];
+var mixedArray = ["muhammad huzaifa Khan", 21, true];
 
 //Question # 7
 var quaInPak = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];
