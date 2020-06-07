@@ -541,7 +541,7 @@ else {
     alert("Enter a valid time.");
 }
 
-/* -----------------------Chapter # 14-16------------------------- */
+// Chapter # 14-16
 
 //Question # 1
 var stdInfo = [];
@@ -676,7 +676,8 @@ var up = document.getElementById('geeks');
 			down.innerHTML = "Elements Added"; 
         }
         
-/* -----------------------Chapter # 17-20------------------------ */
+
+//Chapter # 17-20
 
 //Question # 1
 var multiArr = [[]];
