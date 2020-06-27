@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="row">
+            
+            <div class="col-md-6 col-sm-10 col-xsm-10 offset-sm-1 offset-md-2 my-5">
+                <form name="sci-calc">
+                    <table class="table calculator" cellspacing="0" cellpadding="1">
+                        <tr>
+                            <td colspan="5"><input id="display" name="display" value="0" size="28" maxlength="25"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btnTop" name="btnTop" value="C" onclick="this.form.display.value=  0 ">
+                            </td>
+                            <td><input type="button" class="btnTop" name="btnTop" value="DEL"
+                                    onclick="deleteChar(this.form.display)"></td>
+                            <td><input type="button" class="btnTop" name="btnTop" value="&radic;"
+                                    onclick="if(checkNum(this.form.display.value)) { sqrt(this.form) }"></td>
+                            <td><input type="button" class="btnMath" name="btnTop" value="/"
+                                    onclick="addChar(this.form.display, '/')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btnNum" name="btnNum" value="7"
+                                    onclick="addChar(this.form.display, '7')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="8"
+                                    onclick="addChar(this.form.display, '8')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="9"
+                                    onclick="addChar(this.form.display, '9')"></td>
+                            <td><input type="button" class="btnMath" name="btnMath" value="X"
+                                    onclick="addChar(this.form.display, '*')"></td>
+                        <tr>
+                            <td><input type="button" class="btnNum" name="btnNum" value="4"
+                                    onclick="addChar(this.form.display, '4')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="5"
+                                    onclick="addChar(this.form.display, '5')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="6"
+                                    onclick="addChar(this.form.display, '6')"></td>
+                            <td><input type="button" class="btnMath" name="btnMath" value="-"
+                                    onclick="addChar(this.form.display, '-')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btnNum" name="btnNum" value="1"
+                                    onclick="addChar(this.form.display, '1')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="2"
+                                    onclick="addChar(this.form.display, '2')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="3"
+                                    onclick="addChar(this.form.display, '3')"></td>
+                            <td><input type="button" class="btnMath" name="btnMath" value="+"
+                                    onclick="addChar(this.form.display, '+')"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="button" class="btnNum" name="btnMath" value="00"
+                                    onclick="changeSign(this.form.display,'00')"></td>
+                            <td><input type="button" class="btnNum" name="btnNum" value="0"
+                                    onclick="addChar(this.form.display, '0')"></td>
+                            <td><input type="button" class="btnNum" name="btnMath" value="&#46;"
+                                    onclick="addChar(this.form.display, '&#46;')"></td>
+                            <td><input type="button" class="btnMath" name="btnTop" value="="
+                                    onclick="if(checkNum(this.form.display.value)) { compute(this.form) }"></td>
+                        </tr>
+            
+                        </tabel>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
