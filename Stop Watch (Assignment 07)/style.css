@@ -1,0 +1,22 @@
+.size{
+    font-size: 40px;
+}
+label{
+    font-family: monospace;
+    font-size: 40px;
+}
+#mins{
+    font-size: 30px;
+    margin: 5px;
+}
+#secs{
+    margin: 5px;
+    font-size: 30px;
+}
+#milSecs{
+    font-size: 30px;
+    margin: 5px;
+}
+body{
+    background: rgb(161, 226, 226);
+}

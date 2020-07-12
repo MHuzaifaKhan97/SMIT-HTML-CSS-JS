@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stop Watch</title>
+    <!-- Bootstrap 3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <div style="height:100px;"></div>
+        <div class="panel panel-danger col-md-8 col-md-offset-2">
+            <div class="panel-heading text-center">
+                <h1 >
+                    Stop Watch
+                </h1>
+            </div>
+            <div class="panel-body text-center">
+                <label  id="min">00</label>
+                <label >:</label>
+                <label  id="sec">00</label>
+                <label >:</label>
+                <label  id="miliSec">00</label> <br>
+
+                <label class=".size" id="mins">Min </label>
+                <label class=".size"> </label>
+                <label class=".size" id="secs"> Sec </label>
+                <label class=".size"> </label>
+                <label class=".size" id="milSecs"> Mili </label>
+            </div>
+            <div class="panel-footer">
+                <button class="btn btn-success btn-block" onclick="timerStart();">Timer Start</button>
+                <button class="btn btn-danger btn-block" onclick="timerStop();">Timer Stop</button>
+                <button class="btn btn-info btn-block" onclick="timerReset();">Timer Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
