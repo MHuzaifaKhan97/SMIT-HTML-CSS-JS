@@ -1,0 +1,63 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#todoApp{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+/* #todoApp ul{
+    text-align: center;
+} */
+.h1{
+    color: royalblue;
+    font-size: 60px;
+    font-family: monospace;
+    text-align: center;
+    text-shadow: 1px 2px 2px red;
+    font-variant-caps: petite-caps;
+}
+.input{
+    width: 500px;
+    height: 40px;
+    font-size: 22px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.btn{
+    margin: 10px;
+    width: 160px;
+    height: 45px;
+    font-size: 25px;
+    color: white;
+    background-color: royalblue;
+    border: none;
+    border-radius: 10px 10px;
+    
+}
+.btn:hover{
+    color: white;
+    background-color: rgb(243, 3, 3);
+}
+ul li{
+    list-style-type: none;
+    text-align: center;
+    font-size: 35px;
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 100%;
+    margin: 10px;
+}
+
+.liBtn{
+    float: right;
+    width: 60px;
+    height: 30px;
+    border:none;
+    background-color: rgb(12, 113, 214);
+    color: white;
+    margin: 5px;
+    font-family: monospace;
+    border-radius: 10px;
+}
