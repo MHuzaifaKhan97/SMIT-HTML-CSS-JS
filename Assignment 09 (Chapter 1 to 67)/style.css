@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border-radius: 20px;
+    box-shadow: 20px 2px 20px orange;
+    transition: 0.5s;
+}
+.box:hover{
+    margin: 10px 0;
+    box-shadow: 20px 2px 20px green;
+
+}

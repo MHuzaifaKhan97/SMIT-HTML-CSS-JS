@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment 09</title>
+    <style>
+        .phone a img {
+            padding: 0 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+
+        <h2>CHAPTER NO 43 TO 48</h2>
+        <div>
+            <a href="#" onclick="runAlert()">Click for Alert</a>
+            <div class="phone">
+                <a href="#" onclick="phoneAlert()"><img src="./images/phone1.jpg" width="300" height="400" alt=""></a>
+                <a href="#" onclick="phoneAlert()"><img src="./images/phone2.jpg" width="300" height="400" alt=""></a>
+                <a href="#" onclick="phoneAlert()"><img src="./images/phone3.jpg" width="300" height="400" alt=""></a>
+                <a href="#" onclick="phoneAlert()"><img src="./images/phone4.jpg" width="300" height="400" alt=""></a>
+            </div>
+            <div>
+                <table style="border: 1px solid black;width:100%;margin-top: 20px;text-align: center;" id="parent">
+                    <tr>
+                        <th>Index</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+            </div>
+            <div style="text-align: center;margin: 20px auto;">
+                <img src="./images/phone1.jpg" width="300" height="400" onmouseover="changeImage()"
+                    onmouseout="changeBackImage()" id="img" alt="">
+            </div>
+            <div style="text-align: center;">
+                <h2>Counter : <label for="counter" id="counter"> 0 </label> </h2>
+                <button onclick="incrementCounter()">Increment</button>
+                <button onclick="decrementCounter()">Decrement</button>
+            </div>
+        </div>
+
+        <h2>CHAPTER NO 49 TO 52</h2>
+        <div style="text-align: center;">
+            <h2>Sign Up Page</h2>
+            <form onsubmit="getInformation()">
+                <input type="text" id="name" placeholder="Username" /> <br>
+                <input type="email" id="emailA" placeholder="Email" /> <br>
+                <input type="number" id="contact" placeholder="Contact No" /> <br>
+                <input type="password" id="password" placeholder="Password" /> <br>
+
+                <input type="submit" value="Submit" />
+
+            </form>
+            <ul id="details">
+
+            </ul>
+        </div>
+        <div>
+            <p id="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s <a href="javascript:void(0)" onclick="readMore()">read more</a> </p>
+        </div>
+        <div>
+            <table style="border: 1px solid black;width:100%;margin-top: 20px;text-align: center;" id="parent2">
+                <tr>
+                    <th>Index</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Delete</th>
+                </tr>
+            </table>
+            <div>
+                <form>
+                    <input type="number" id="id" placeholder="ID"/> <br>
+                    <input type="text" id="uName" placeholder="Name"/> <br>
+                    <input type="text" id="uClass" placeholder="Class"/> <br>
+                    <input type="button" onclick="updateStudent()" value="Update Student"/>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src='./app.js'></script>
+</body>
+
+</html>
