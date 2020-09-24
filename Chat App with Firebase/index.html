@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat App - Login</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    <!-- Firebase Configuration -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBeP201Hp624MW3TxCSK4wzMb_Gw8PPDzo",
+            authDomain: "fb-rt-chatapp.firebaseapp.com",
+            databaseURL: "https://fb-rt-chatapp.firebaseio.com",
+            projectId: "fb-rt-chatapp",
+            storageBucket: "fb-rt-chatapp.appspot.com",
+            messagingSenderId: "994645446792",
+            appId: "1:994645446792:web:f97bfb7a507200d07ccf3d",
+            measurementId: "G-4E1P0F31SJ"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Bootstrap V5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 chat-left">
+                <h1 class="text-center">Chat App</h1>
+            </div>
+            <div class="col-md-6 chat-rights">
+                <div class="login-box">
+                    <h1>Chat App - Login</h1>
+                    <!-- <form class="form"> -->
+                    <div class="form-group my-3">
+                        <input type="email" id="login-email" placeholder="Enter Email..." class="form-control" />
+                    </div>
+                    <div class="form-group my-3">
+                        <input type="password" id="login-password" placeholder="Enter Password..."
+                            class="form-control" />
+                    </div>
+                    <div class="form-group my-3">
+                        <button onclick="login()" class="btn btn-outline-primary btn-lg btn-block">Login</button>
+                    </div>
+                    <!-- </form> -->
+                    <hr class="my-3">
+                    <p class="text-center">Or</p>
+                    <hr class="my-2">
+                    <button class="btn btn-warning btn-block" data-toggle="modal" data-target="#signUpModal">Sign Up
+                        with Email <i class="fa fa-user"></i> </button>
+                    <button onclick="signInGoogle()" class="btn btn-danger btn-block">Login with Google <i
+                            class="fa fa-google"></i> </button>
+                    <button onclick="signInFacebook()" class="btn btn-primary btn-block">Login with Facebook <i
+                            class="fa fa-facebook"></i> </button>
+
+                    <!-- Sign Up Modal -->
+                    <div class="modal fade" id="signUpModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title title-text" id="exampleModalLabel">Chat App - Sign Up</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group my-3">
+                                        <input type="text" placeholder="Enter Your Name..." id="signup-username"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="email" placeholder="Enter Your Email..." id="signup-email"
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group my-3">
+                                        <input type="password" placeholder="Enter Your Password..." id="signup-password"
+                                            class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" onclick="signUp()" class="btn btn-primary">Create
+                                        User</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src='./app.js'></script>
+</body>
+
+</html>

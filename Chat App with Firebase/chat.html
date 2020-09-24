@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>Chat App - Home</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    <!-- Custom Styling -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
+    <!-- Firebase Configuration -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyBeP201Hp624MW3TxCSK4wzMb_Gw8PPDzo",
+            authDomain: "fb-rt-chatapp.firebaseapp.com",
+            databaseURL: "https://fb-rt-chatapp.firebaseio.com",
+            projectId: "fb-rt-chatapp",
+            storageBucket: "fb-rt-chatapp.appspot.com",
+            messagingSenderId: "994645446792",
+            appId: "1:994645446792:web:f97bfb7a507200d07ccf3d",
+            measurementId: "G-4E1P0F31SJ"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <!-- Bootstrap V5 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="fetchUser()">
+    <div class="container-fluid chat-body">
+        <div class="row">
+            <div class="col-md-3 chat-head">
+                <h3 class="text-uppercase">
+                    All Users
+                </h3>
+            </div>
+            <div class="col-md-9">
+                <div class="chat-head fixed">
+                    <h1 class="text-uppercase p-2"> <i class="fa fa-envelope"></i>
+                        Chat App
+                    </h1>
+                    <h5 class="dropdown-icon" onclick="logOut()">
+                        <i class="fas fa-backspace"></i> LogOut
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 active-users-list">
+                <div>
+                    <ul id="active-users-list">
+                        <hr>
+                        <li style="font-size: 16px;"><span id="yourName"></span> <span>(you)</span> </li>
+                        <hr>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="chat-box">
+
+                    <ul id="messages">
+                    </ul>
+
+                </div>
+                <div class="d-flex input-side">
+                    <input type="text" name="message" id="message" placeholder="Enter Message.." class="form-control" />
+                    <button class="btn btn-warning" onclick="sendMessage()">
+                        Send <i class="fa fa-location-arrow"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sweet Alert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src='./app.js'></script>
+</body>
+
+</html>
